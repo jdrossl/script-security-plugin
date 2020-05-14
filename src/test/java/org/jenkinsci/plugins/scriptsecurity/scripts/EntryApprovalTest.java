@@ -26,6 +26,7 @@ package org.jenkinsci.plugins.scriptsecurity.scripts;
 
 import hudson.Util;
 import org.apache.commons.io.FileUtils;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
@@ -40,6 +41,7 @@ import java.util.TreeSet;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+@Ignore
 public final class EntryApprovalTest extends AbstractApprovalTest<EntryApprovalTest.Entry> {
 
     @Rule public TemporaryFolder tmpFolderRule = new TemporaryFolder();

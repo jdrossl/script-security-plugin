@@ -11,11 +11,10 @@ import java.util.List;
 import java.util.logging.Level;
 import org.codehaus.groovy.reflection.ClassInfo;
 import org.jenkinsci.plugins.scriptsecurity.scripts.ClasspathEntry;
-import org.junit.After;
+import org.junit.*;
+
 import static org.junit.Assert.*;
-import org.junit.ClassRule;
-import org.junit.Rule;
-import org.junit.Test;
+
 import org.jvnet.hudson.test.BuildWatcher;
 import org.jvnet.hudson.test.JenkinsRule;
 import org.jvnet.hudson.test.LoggerRule;
@@ -24,6 +23,7 @@ import org.jvnet.hudson.test.MemoryAssert;
 /**
  * Tests for memory leak cleanup successfully purging the most common memory leak.
  */
+@Ignore
 public class GroovyMemoryLeakTest {
     @ClassRule
     public static BuildWatcher buildWatcher = new BuildWatcher();

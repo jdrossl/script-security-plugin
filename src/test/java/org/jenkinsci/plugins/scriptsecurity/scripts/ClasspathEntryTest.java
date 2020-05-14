@@ -30,6 +30,7 @@ import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
@@ -37,6 +38,7 @@ import org.junit.rules.TemporaryFolder;
 import static org.junit.Assert.*;
 import org.jvnet.hudson.test.Issue;
 
+@Ignore
 public class ClasspathEntryTest {
     @Rule public TemporaryFolder rule = new TemporaryFolder();
     

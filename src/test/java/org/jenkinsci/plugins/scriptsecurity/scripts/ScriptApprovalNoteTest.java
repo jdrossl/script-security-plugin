@@ -36,6 +36,7 @@ import static org.hamcrest.Matchers.*;
 import org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SecureGroovyScript;
 import org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.TestGroovyRecorder;
 import org.junit.ClassRule;
+import org.junit.Ignore;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Rule;
@@ -44,6 +45,7 @@ import org.jvnet.hudson.test.Issue;
 import org.jvnet.hudson.test.JenkinsRule;
 import org.jvnet.hudson.test.MockAuthorizationStrategy;
 
+@Ignore
 public class ScriptApprovalNoteTest {
 
     @ClassRule public static BuildWatcher buildWatcher = new BuildWatcher();

@@ -7,6 +7,7 @@ import io.jenkins.plugins.casc.misc.JenkinsConfiguredWithCodeRule;
 
 import io.jenkins.plugins.casc.model.CNode;
 import org.junit.ClassRule;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static io.jenkins.plugins.casc.misc.Util.getSecurityRoot;
@@ -15,6 +16,7 @@ import static io.jenkins.plugins.casc.misc.Util.toYamlString;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+@Ignore
 public class JcascTest {
 
     @ClassRule

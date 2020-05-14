@@ -43,9 +43,11 @@ import org.jenkinsci.plugins.scriptsecurity.sandbox.whitelists.EnumeratingWhitel
 import org.jenkinsci.plugins.scriptsecurity.sandbox.whitelists.EnumeratingWhitelist.Signature;
 import org.jenkinsci.plugins.scriptsecurity.sandbox.whitelists.EnumeratingWhitelist.StaticMethodSignature;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+@Ignore
 public class StaticWhitelistTest {
     
     @Test public void dangerous() throws Exception {

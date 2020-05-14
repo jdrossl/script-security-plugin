@@ -29,9 +29,11 @@ import java.io.StringReader;
 import java.util.Collections;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+@Ignore
 public class ProxyWhitelistTest {
 
     @Test public void reset() throws Exception {

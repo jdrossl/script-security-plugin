@@ -24,8 +24,10 @@
 
 package org.jenkinsci.plugins.scriptsecurity.sandbox.whitelists;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
+@Ignore
 public class JenkinsWhitelistTest {
     
     @Test public void sanity() throws Exception {

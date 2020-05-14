@@ -780,6 +780,11 @@ public class SandboxInterceptorTest {
         assertEvaluate(new GenericWhitelist(), null, script);
     }
 
+    @Test public void crafterTests() throws Exception {
+        String script = IOUtils.toString(this.getClass().getResourceAsStream("SandboxInterceptorTest/crafter.groovy"));
+        assertEvaluate(new GenericWhitelist(), null, script);
+    }
+
     @Issue("JENKINS-31234")
     @Test public void calendarGetInstance() throws Exception {
         assertEvaluate(new GenericWhitelist(), true, "Calendar.getInstance().get(Calendar.DAY_OF_MONTH) < 32");

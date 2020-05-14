@@ -26,11 +26,13 @@ package org.jenkinsci.plugins.scriptsecurity.sandbox.whitelists;
 
 import org.jenkinsci.plugins.scriptsecurity.sandbox.Whitelist;
 import org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptorTest;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ErrorCollector;
 import org.jvnet.hudson.test.Issue;
 
+@Ignore
 public class GenericWhitelistTest {
     
     @Rule public ErrorCollector errors = new ErrorCollector();

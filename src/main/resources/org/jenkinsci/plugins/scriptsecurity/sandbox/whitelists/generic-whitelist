@@ -1121,3 +1121,7 @@ staticMethod org.codehaus.groovy.runtime.StringGroovyMethods unexpandLine java.l
 
 # Currently called indirectly from Builder.sandboxCast; cf. comment in SandboxInvokerTest.typeCoercion:
 staticMethod org.kohsuke.groovy.sandbox.impl.Checker checkedCast java.lang.Class java.lang.Object boolean boolean boolean
+
+# Used for testing
+method java.lang.Iterable forEach java.util.function.Consumer
+staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods println groovy.lang.Closure java.lang.Object
